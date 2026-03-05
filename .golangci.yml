@@ -1,0 +1,30 @@
+linters:
+  disable:
+    - ll
+  enable:
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - unused
+    - gofmt
+    - goimports
+
+linters-settings:
+  govet:
+    check-shadowing: true
+
+issues:
+  exclude-rules:
+    - unittest: ".*\.exp$"
+  exclude-linters:
+    - dupl
+    - lll
+    - misspell
+    - golint
+    - godot
+    - maligned
+    - prealloc
+    - scopelint
+    - testify
